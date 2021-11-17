@@ -1,0 +1,20 @@
+---
+title: "temp_plot"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Temp Analysis
+
+```{r temp_analysis}
+library(raster)
+library(here)
+
+jan<-raster(here("wc2", "wc2.1_5m_tmin_01.tif"))
+plot(jan)
+
+```
+
